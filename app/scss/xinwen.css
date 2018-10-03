@@ -1,0 +1,254 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.app .head {
+  margin-bottom: 20px;
+}
+
+.app .body-content {
+  width: 1160px;
+  margin: 100px auto 0 auto;
+}
+
+.app .body-content .school-bag {
+  margin-bottom: 60px;
+}
+
+.app .body-content .school-bag .pro-left {
+  display: inline-block;
+  width: 900px;
+}
+
+.app .body-content .school-bag .pro-left .pro-title {
+  width: 900px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.app .body-content .school-bag .pro-left .pro-title .title-left {
+  display: inline-block;
+}
+
+.app .body-content .school-bag .pro-left .pro-title .title-left span {
+  font-size: 24px;
+  vertical-align: 6px;
+  margin-left: 5px;
+}
+
+.app .body-content .school-bag .pro-left .list {
+  list-style: none;
+}
+
+.app .body-content .school-bag .pro-left .list li {
+  display: inline-block;
+  width: 410px;
+  height: 131px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 27px;
+  box-shadow: 0 0 5px #e9e9e9;
+  border-radius: 0.4em;
+}
+
+.app .body-content .school-bag .pro-left .list li:hover {
+  box-shadow: 0 0 5px #42a0ff;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-left {
+  display: inline-block;
+  width: 111px;
+  height: 111px;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right {
+  display: inline-block;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right h3 {
+  color: #1E1E1E;
+  width: 286px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .up {
+  color: #DAD8D8;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom {
+  margin-top: 20px;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom .bottom-left {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 55px;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom .bottom-right {
+  display: inline-block;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom .bottom-right .view {
+  font-size: 12px;
+  color: #42a0ff;
+  margin-right: 26px;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom .bottom-right .view img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom .bottom-right .commit {
+  font-size: 12px;
+  color: #6FC93A;
+  margin-right: 26px;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom .bottom-right .commit img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom .bottom-right .heart {
+  font-size: 12px;
+  color: #FB7BA2;
+}
+
+.app .body-content .school-bag .pro-left .list li a .li-right .right-right .right-bottom .bottom-right .heart img {
+  margin-right: 3px;
+  vertical-align: -3px;
+}
+
+.app .body-content .school-bag .pro-right {
+  margin-top: 3px;
+  vertical-align: top;
+  display: inline-block;
+  width: 20%;
+}
+
+.app .body-content .school-bag .pro-right h2 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.app .body-content .school-bag .pro-right h2 .span-first {
+  font-size: 16px;
+  color: #999999;
+  margin-left: 2px;
+}
+
+.app .body-content .school-bag .pro-right h2 .right-top {
+  display: inline-block;
+  position: relative;
+  margin-left: 50px;
+  font-size: 14px;
+  color: #68ceff;
+  vertical-align: bottom;
+}
+
+.app .body-content .school-bag .pro-right h2 .right-top .span-two {
+  border-bottom: 2px solid;
+  color: #42a0ff;
+}
+
+.app .body-content .school-bag .pro-right h2 .right-top .span-two:before {
+  margin-left: 11px;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 3px solid #42a0ff;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  content: "";
+}
+
+.app .body-content .school-bag .pro-right ul {
+  list-style: none;
+  margin-top: 32px;
+}
+
+.app .body-content .school-bag .pro-right ul .sou {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.app .body-content .school-bag .pro-right ul .sou a {
+  color: #1E1E1E;
+}
+
+.app .body-content .school-bag .pro-right ul .sou a:hover {
+  color: #42a0ff;
+}
+
+.app .body-content .school-bag .pro-right ul li {
+  margin-bottom: 10px;
+}
+
+.app .body-content .school-bag .pro-right ul li:hover h6 {
+  color: #42a0ff;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-left {
+  display: inline-block;
+  width: 89px;
+  height: 62px;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-right {
+  display: inline-block;
+  float: right;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-right h6 {
+  font-weight: normal;
+  font-size: 12px;
+  width: 138px;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-right .up {
+  font-size: 12px;
+  color: #DAD8D8;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-right .right-bottom .view {
+  font-size: 12px;
+  color: #42a0ff;
+  margin-right: 20px;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-right .right-bottom .view img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-right .right-bottom .commit {
+  font-size: 12px;
+  color: #6FC93A;
+}
+
+.app .body-content .school-bag .pro-right ul li a .right-right .right-bottom .commit img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}

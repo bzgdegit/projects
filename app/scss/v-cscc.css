@@ -1,0 +1,1662 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: 'pingfang',Arial, Helvetica, sans-serif;
+  src: url("pingfang-re");
+}
+
+a {
+  text-decoration: none;
+  color: #848484;
+}
+
+body {
+  margin-top: 80px;
+}
+
+body .app .head {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 50px;
+  background: white;
+  box-shadow: 0px 2px 10px #e8e8e8;
+  z-index: 100;
+}
+
+body .app .head .head-content {
+  width: 1160px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+body .app .head .head-content .head-left {
+  display: inline-block;
+  width: 500px;
+  margin: 0px;
+}
+
+body .app .head .head-content .head-left img {
+  line-height: 50px;
+  cursor: pointer;
+}
+
+body .app .head .head-content .head-left input {
+  position: relative;
+  bottom: 8px;
+  outline: medium;
+  border: 1px solid #ececec;
+  padding-left: 20px;
+  width: 318px;
+  height: 28px;
+  border-radius: 0.4em;
+}
+
+body .app .head .head-content .head-left button {
+  cursor: pointer;
+  background-color: #42bdeb;
+  border: 1px solid #42bdeb;
+  width: 48px;
+  height: 30px;
+  position: relative;
+  bottom: 8px;
+  left: -43px;
+  border-radius: 0.4em;
+}
+
+body .app .head .head-content .head-left button i {
+  color: white;
+}
+
+body .app .head .head-content ul {
+  vertical-align: top;
+  list-style: none;
+  line-height: 42px;
+  margin-top: 5px;
+  margin-right: 45px;
+  margin-left: -60px;
+  display: inline-block;
+  color: #a1a1a1;
+}
+
+body .app .head .head-content ul .li-first {
+  border-bottom: 4px solid #42bdeb;
+}
+
+body .app .head .head-content ul .li-first a {
+  color: #42a0ff;
+}
+
+body .app .head .head-content ul li {
+  margin-left: 30px;
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+  cursor: pointer;
+}
+
+body .app .head .head-content ul li:hover {
+  border-bottom: 4px solid #42bdeb;
+}
+
+body .app .head .head-content ul li:hover a {
+  color: #42bdeb;
+}
+
+body .app .head .head-right {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+}
+
+body .app .head .head-right .message {
+  display: inline-block;
+  cursor: pointer;
+  color: #929292;
+  vertical-align: top;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+body .app .head .head-right .message sup {
+  position: relative;
+  left: -10px;
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  background-color: #e9563e;
+  border-radius: 50%;
+  font-size: 12px;
+  transform: scale(0.8);
+}
+
+body .app .head .head-right .user-img {
+  display: inline-block;
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+body .app .head .head-right .download-client {
+  float: right;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  margin-left: 10px;
+  line-height: 30px;
+  background-color: #42bdeb;
+  border-radius: 0.4em;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+body .app .body-content {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+body .app .body-content .recommend {
+  margin-bottom: 30px;
+}
+
+body .app .body-content .recommend .swiper-container {
+  display: inline-block;
+  width: 440px;
+  height: 220px;
+}
+
+body .app .body-content .recommend .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+body .app .body-content .recommend .swiper-container .swiper-pagination {
+  text-align: right;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7));
+  bottom: 0px;
+  height: 60px;
+  width: 98%;
+  line-height: 60px;
+  padding-right: 2%;
+  color: white;
+}
+
+body .app .body-content .recommend .recommend-right {
+  list-style: none;
+  float: right;
+  width: 700px;
+}
+
+body .app .body-content .recommend .recommend-right li {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 100px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 3px 7px 0 #DAD8D8;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+body .app .body-content .recommend .recommend-right li:hover {
+  transform: translate(-5px, -10px);
+  box-shadow: 10px 10px 6px 0 #DAD8D8;
+}
+
+body .app .body-content .recommend .recommend-right li a img {
+  width: 100%;
+}
+
+body .app .body-content .recommend .recommend-right li p {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 25px;
+  color: white;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 25px;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+}
+
+body .app .body-content .promote {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+body .app .body-content .promote .pro-left {
+  display: inline-block;
+  width: 900px;
+}
+
+body .app .body-content .promote .pro-left .pro-title {
+  width: 900px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+body .app .body-content .promote .pro-left .pro-title span {
+  font-size: 24px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+body .app .body-content .promote .pro-left .detail {
+  float: right;
+}
+
+body .app .body-content .promote .pro-left .detail span {
+  display: inline-block;
+  width: 57px;
+  height: 19px;
+  margin-top: 10px;
+  border: 1px solid #dbdbdb;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 0.4em;
+  color: #999999;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+body .app .body-content .promote .pro-left .detail a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #42bdeb;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+body .app .body-content .promote .pro-left .list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+body .app .body-content .promote .pro-left .list li {
+  display: inline-block;
+  margin-right: 16.2px;
+  width: 160px;
+  height: 162px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+body .app .body-content .promote .pro-left .list li:hover .description {
+  height: auto;
+  color: #42bdeb;
+  text-overflow: initial;
+  white-space: normal;
+}
+
+body .app .body-content .promote .pro-left .list li:hover .img-content:before {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-out , height 0.2s ease-out 0.2s;
+  border-bottom-color: #42bdeb;
+  border-left-color: #42bdeb;
+}
+
+body .app .body-content .promote .pro-left .list li:hover .img-content:after {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-out , height 0.2s ease-out 0.2s;
+  border-top-color: #42bdeb;
+  border-right-color: #42bdeb;
+}
+
+body .app .body-content .promote .pro-left .list li:hover .img-content .info {
+  transform: translateY(0);
+}
+
+body .app .body-content .promote .pro-left .list li a .img-content {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 0.4em;
+  margin-bottom: 10px;
+}
+
+body .app .body-content .promote .pro-left .list li a .img-content:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+}
+
+body .app .body-content .promote .pro-left .list li a .img-content:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+}
+
+body .app .body-content .promote .pro-left .list li a .img-content img {
+  width: 100%;
+  min-height: 100px;
+}
+
+body .app .body-content .promote .pro-left .list li a .img-content .info {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #42bdeb;
+  transition: all 0.2s ease 0.2s;
+  transform: translateY(30px);
+}
+
+body .app .body-content .promote .pro-left .list li a .img-content .info img {
+  width: 20px;
+  min-height: 20px;
+  margin: 0 5px;
+}
+
+body .app .body-content .promote .pro-left .list li a .img-content .info span {
+  font-size: 12px;
+  color: white;
+}
+
+body .app .body-content .promote .pro-left .list li a .description {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #1E1E1E;
+}
+
+body .app .body-content .promote .pro-left .list li a .view-commit {
+  height: 17px;
+}
+
+body .app .body-content .promote .pro-left .list li a .view-commit .view {
+  margin-right: 20px;
+  padding-right: 2px;
+  color: #42bdeb;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+body .app .body-content .promote .pro-left .list li a .view-commit .view img {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+body .app .body-content .promote .pro-left .list li a .view-commit .commit {
+  margin-right: 20px;
+  padding-right: 2px;
+  color: #6FC93A;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+body .app .body-content .promote .pro-left .list li a .view-commit .commit img {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+body .app .body-content .promote .pro-right {
+  float: right;
+  display: inline-block;
+  width: 240px;
+}
+
+body .app .body-content .promote .pro-right h2 {
+  font-weight: normal;
+  margin: 10px;
+}
+
+body .app .body-content .promote .pro-right .right-list {
+  list-style: none;
+}
+
+body .app .body-content .promote .pro-right .right-list li {
+  margin-bottom: 7px;
+  height: 25px;
+}
+
+body .app .body-content .promote .pro-right .right-list li a {
+  display: block;
+  font-size: 15px;
+  color: #848484;
+  vertical-align: top;
+}
+
+body .app .body-content .promote .pro-right .right-list li a:hover {
+  color: #42bdeb;
+}
+
+body .app .body-content .promote .pro-right .right-list li a span {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #42bdeb;
+  color: white;
+  text-align: center;
+  margin-right: 13px;
+}
+
+body .app .body-content .promote .pro-right .right-list li a img {
+  vertical-align: -7px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  margin-right: 17px;
+}
+
+body .app .body-content .community {
+  margin-bottom: 30px;
+}
+
+body .app .body-content .community .pro-left {
+  display: inline-block;
+  width: 900px;
+}
+
+body .app .body-content .community .pro-left .pro-title {
+  width: 900px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+body .app .body-content .community .pro-left .pro-title .title-left {
+  display: inline-block;
+}
+
+body .app .body-content .community .pro-left .pro-title .title-left span {
+  font-size: 24px;
+  vertical-align: 11px;
+  margin-left: 5px;
+}
+
+body .app .body-content .community .pro-left .pro-title .top-list {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+body .app .body-content .community .pro-left .pro-title .top-list .first-li {
+  border-bottom: 2px solid;
+  color: #42a0ff;
+  padding-bottom: 2px;
+}
+
+body .app .body-content .community .pro-left .pro-title .top-list .first-li:before {
+  margin-left: 18px;
+  position: absolute;
+  bottom: 1px;
+  border-bottom: 3px solid #42a0ff;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  content: "";
+}
+
+body .app .body-content .community .pro-left .pro-title .top-list li {
+  display: inline-block;
+  margin-right: 28px;
+  font-size: 14px;
+  color: #1E1E1E;
+}
+
+body .app .body-content .community .pro-left .pro-title .top-list li:hover {
+  color: #42bdeb;
+  cursor: pointer;
+}
+
+body .app .body-content .community .pro-left .detail {
+  float: right;
+}
+
+body .app .body-content .community .pro-left .detail span {
+  display: inline-block;
+  width: 57px;
+  height: 19px;
+  margin-top: 10px;
+  border: 1px solid #dbdbdb;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 0.4em;
+  color: #999999;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+body .app .body-content .community .pro-left .detail a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #42bdeb;
+  line-height: 40px;
+  margin-top: 2px;
+  margin-right: 20px;
+}
+
+body .app .body-content .community .pro-left .list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+body .app .body-content .community .pro-left .list li {
+  display: inline-block;
+  margin-right: 16.2px;
+  width: 160px;
+  height: 162px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+body .app .body-content .community .pro-left .list li:hover .description {
+  height: auto;
+  color: #42bdeb;
+  text-overflow: initial;
+  white-space: normal;
+}
+
+body .app .body-content .community .pro-left .list li:hover .img-content:before {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-out , height 0.2s ease-out 0.2s;
+  border-bottom-color: #42bdeb;
+  border-left-color: #42bdeb;
+}
+
+body .app .body-content .community .pro-left .list li:hover .img-content:after {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-out , height 0.2s ease-out 0.2s;
+  border-top-color: #42bdeb;
+  border-right-color: #42bdeb;
+}
+
+body .app .body-content .community .pro-left .list li:hover .img-content .info {
+  transform: translateY(0);
+}
+
+body .app .body-content .community .pro-left .list li a .img-content {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 0.4em;
+  margin-bottom: 10px;
+}
+
+body .app .body-content .community .pro-left .list li a .img-content:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+}
+
+body .app .body-content .community .pro-left .list li a .img-content:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+}
+
+body .app .body-content .community .pro-left .list li a .img-content img {
+  width: 100%;
+  min-height: 100px;
+}
+
+body .app .body-content .community .pro-left .list li a .img-content .info {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #42bdeb;
+  transition: all 0.2s ease 0.2s;
+  transform: translateY(30px);
+}
+
+body .app .body-content .community .pro-left .list li a .img-content .info img {
+  width: 20px;
+  min-height: 20px;
+  margin: 0 5px;
+}
+
+body .app .body-content .community .pro-left .list li a .img-content .info span {
+  font-size: 12px;
+  color: white;
+}
+
+body .app .body-content .community .pro-left .list li a .description {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #1E1E1E;
+}
+
+body .app .body-content .community .pro-left .list li a .view-commit {
+  height: 17px;
+}
+
+body .app .body-content .community .pro-left .list li a .view-commit .view {
+  margin-right: 20px;
+  padding-right: 2px;
+  color: #42bdeb;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+body .app .body-content .community .pro-left .list li a .view-commit .view img {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+body .app .body-content .community .pro-left .list li a .view-commit .commit {
+  margin-right: 20px;
+  padding-right: 2px;
+  color: #6FC93A;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+body .app .body-content .community .pro-left .list li a .view-commit .commit img {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+body .app .body-content .community .pro-right {
+  margin-top: 6px;
+  vertical-align: top;
+  display: inline-block;
+  width: 20%;
+}
+
+body .app .body-content .community .pro-right h2 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+body .app .body-content .community .pro-right h2 .span-first {
+  font-size: 16px;
+  color: #999999;
+  margin-left: 2px;
+}
+
+body .app .body-content .community .pro-right h2 .right-top {
+  display: inline-block;
+  position: relative;
+  margin-left: 50px;
+  font-size: 14px;
+  color: #68ceff;
+  vertical-align: bottom;
+}
+
+body .app .body-content .community .pro-right h2 .right-top .span-two {
+  border-bottom: 2px solid;
+  color: #42a0ff;
+}
+
+body .app .body-content .community .pro-right h2 .right-top .span-two:before {
+  margin-left: 11px;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 3px solid #42a0ff;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  content: "";
+}
+
+body .app .body-content .community .pro-right ul {
+  list-style: none;
+  margin-top: 32px;
+}
+
+body .app .body-content .community .pro-right ul .sou {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body .app .body-content .community .pro-right ul .sou a {
+  color: #1E1E1E;
+}
+
+body .app .body-content .community .pro-right ul .sou a:hover {
+  color: #42a0ff;
+}
+
+body .app .body-content .community .pro-right ul li {
+  margin-bottom: 10px;
+}
+
+body .app .body-content .community .pro-right ul li:hover h6 {
+  color: #42a0ff;
+}
+
+body .app .body-content .community .pro-right ul li a .right-left {
+  display: inline-block;
+  width: 89px;
+  height: 62px;
+}
+
+body .app .body-content .community .pro-right ul li a .right-left img {
+  width: 100%;
+  height: 100%;
+}
+
+body .app .body-content .community .pro-right ul li a .right-right {
+  display: inline-block;
+  float: right;
+}
+
+body .app .body-content .community .pro-right ul li a .right-right h6 {
+  font-weight: normal;
+  font-size: 12px;
+  width: 138px;
+}
+
+body .app .body-content .community .pro-right ul li a .right-right .up {
+  font-size: 12px;
+  color: #DAD8D8;
+}
+
+body .app .body-content .community .pro-right ul li a .right-right .right-bottom .view {
+  font-size: 12px;
+  color: #42a0ff;
+  margin-right: 20px;
+}
+
+body .app .body-content .community .pro-right ul li a .right-right .right-bottom .view img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+body .app .body-content .community .pro-right ul li a .right-right .right-bottom .commit {
+  font-size: 12px;
+  color: #6FC93A;
+}
+
+body .app .body-content .community .pro-right ul li a .right-right .right-bottom .commit img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+body .app .body-content .division {
+  margin-bottom: 30px;
+}
+
+body .app .body-content .division .pro-left {
+  display: inline-block;
+  width: 900px;
+}
+
+body .app .body-content .division .pro-left .pro-title {
+  width: 900px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+body .app .body-content .division .pro-left .pro-title .title-left {
+  display: inline-block;
+}
+
+body .app .body-content .division .pro-left .pro-title .title-left span {
+  font-size: 24px;
+  vertical-align: 6px;
+  margin-left: 5px;
+}
+
+body .app .body-content .division .pro-left .pro-title .top-list {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+body .app .body-content .division .pro-left .pro-title .top-list .first-li {
+  border-bottom: 2px solid;
+  color: #42a0ff;
+  padding-bottom: 2px;
+}
+
+body .app .body-content .division .pro-left .pro-title .top-list .first-li:before {
+  margin-left: 18px;
+  position: absolute;
+  bottom: 1px;
+  border-bottom: 3px solid #42a0ff;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  content: "";
+}
+
+body .app .body-content .division .pro-left .pro-title .top-list li {
+  display: inline-block;
+  margin-right: 28px;
+  font-size: 14px;
+  color: #1E1E1E;
+}
+
+body .app .body-content .division .pro-left .pro-title .top-list li:hover {
+  color: #42bdeb;
+  cursor: pointer;
+}
+
+body .app .body-content .division .pro-left .detail {
+  float: right;
+}
+
+body .app .body-content .division .pro-left .detail span {
+  display: inline-block;
+  width: 57px;
+  height: 19px;
+  margin-top: 10px;
+  border: 1px solid #dbdbdb;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 0.4em;
+  color: #999999;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+body .app .body-content .division .pro-left .detail a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #42bdeb;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+body .app .body-content .division .pro-left .list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+body .app .body-content .division .pro-left .list li {
+  display: inline-block;
+  margin-right: 16.2px;
+  width: 160px;
+  height: 162px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+body .app .body-content .division .pro-left .list li:hover .description {
+  height: auto;
+  color: #42bdeb;
+  text-overflow: initial;
+  white-space: normal;
+}
+
+body .app .body-content .division .pro-left .list li:hover .img-content:before {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-out , height 0.2s ease-out 0.2s;
+  border-bottom-color: #42bdeb;
+  border-left-color: #42bdeb;
+}
+
+body .app .body-content .division .pro-left .list li:hover .img-content:after {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-out , height 0.2s ease-out 0.2s;
+  border-top-color: #42bdeb;
+  border-right-color: #42bdeb;
+}
+
+body .app .body-content .division .pro-left .list li:hover .img-content .info {
+  transform: translateY(0);
+}
+
+body .app .body-content .division .pro-left .list li a .img-content {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 0.4em;
+  margin-bottom: 10px;
+}
+
+body .app .body-content .division .pro-left .list li a .img-content:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+}
+
+body .app .body-content .division .pro-left .list li a .img-content:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+}
+
+body .app .body-content .division .pro-left .list li a .img-content img {
+  width: 100%;
+  min-height: 100px;
+}
+
+body .app .body-content .division .pro-left .list li a .img-content .info {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #42bdeb;
+  transition: all 0.2s ease 0.2s;
+  transform: translateY(30px);
+}
+
+body .app .body-content .division .pro-left .list li a .img-content .info img {
+  width: 20px;
+  min-height: 20px;
+  margin: 0 5px;
+}
+
+body .app .body-content .division .pro-left .list li a .img-content .info span {
+  font-size: 12px;
+  color: white;
+}
+
+body .app .body-content .division .pro-left .list li a .description {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #1E1E1E;
+}
+
+body .app .body-content .division .pro-left .list li a .view-commit {
+  height: 17px;
+}
+
+body .app .body-content .division .pro-left .list li a .view-commit .view {
+  margin-right: 20px;
+  padding-right: 2px;
+  color: #42bdeb;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+body .app .body-content .division .pro-left .list li a .view-commit .view img {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+body .app .body-content .division .pro-left .list li a .view-commit .commit {
+  margin-right: 20px;
+  padding-right: 2px;
+  color: #6FC93A;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+body .app .body-content .division .pro-left .list li a .view-commit .commit img {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+body .app .body-content .division .pro-right {
+  margin-top: 3px;
+  vertical-align: top;
+  display: inline-block;
+  width: 20%;
+}
+
+body .app .body-content .division .pro-right h2 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+body .app .body-content .division .pro-right h2 .span-first {
+  font-size: 16px;
+  color: #999999;
+  margin-left: 2px;
+}
+
+body .app .body-content .division .pro-right h2 .right-top {
+  display: inline-block;
+  position: relative;
+  margin-left: 50px;
+  font-size: 14px;
+  color: #68ceff;
+  vertical-align: bottom;
+}
+
+body .app .body-content .division .pro-right h2 .right-top .span-two {
+  border-bottom: 2px solid;
+  color: #42a0ff;
+}
+
+body .app .body-content .division .pro-right h2 .right-top .span-two:before {
+  margin-left: 11px;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 3px solid #42a0ff;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  content: "";
+}
+
+body .app .body-content .division .pro-right ul {
+  list-style: none;
+  margin-top: 32px;
+}
+
+body .app .body-content .division .pro-right ul .sou {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body .app .body-content .division .pro-right ul .sou a {
+  color: #1E1E1E;
+}
+
+body .app .body-content .division .pro-right ul .sou a:hover {
+  color: #42a0ff;
+}
+
+body .app .body-content .division .pro-right ul li {
+  margin-bottom: 10px;
+}
+
+body .app .body-content .division .pro-right ul li:hover h6 {
+  color: #42a0ff;
+}
+
+body .app .body-content .division .pro-right ul li a .right-left {
+  display: inline-block;
+  width: 89px;
+  height: 62px;
+}
+
+body .app .body-content .division .pro-right ul li a .right-left img {
+  width: 100%;
+  height: 100%;
+}
+
+body .app .body-content .division .pro-right ul li a .right-right {
+  display: inline-block;
+  float: right;
+}
+
+body .app .body-content .division .pro-right ul li a .right-right h6 {
+  font-weight: normal;
+  font-size: 12px;
+  width: 138px;
+}
+
+body .app .body-content .division .pro-right ul li a .right-right .up {
+  font-size: 12px;
+  color: #DAD8D8;
+}
+
+body .app .body-content .division .pro-right ul li a .right-right .right-bottom .view {
+  font-size: 12px;
+  color: #42a0ff;
+  margin-right: 20px;
+}
+
+body .app .body-content .division .pro-right ul li a .right-right .right-bottom .view img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+body .app .body-content .division .pro-right ul li a .right-right .right-bottom .commit {
+  font-size: 12px;
+  color: #6FC93A;
+}
+
+body .app .body-content .division .pro-right ul li a .right-right .right-bottom .commit img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+body .app .body-content .school-bag {
+  margin-bottom: 30px;
+}
+
+body .app .body-content .school-bag .pro-left {
+  display: inline-block;
+  width: 900px;
+}
+
+body .app .body-content .school-bag .pro-left .pro-title {
+  width: 900px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+body .app .body-content .school-bag .pro-left .pro-title .title-left {
+  display: inline-block;
+}
+
+body .app .body-content .school-bag .pro-left .pro-title .title-left span {
+  font-size: 24px;
+  vertical-align: 6px;
+  margin-left: 5px;
+}
+
+body .app .body-content .school-bag .pro-left .top-list {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+body .app .body-content .school-bag .pro-left .top-list .first-li {
+  border-bottom: 2px solid;
+  color: #42a0ff;
+  padding-bottom: 2px;
+}
+
+body .app .body-content .school-bag .pro-left .top-list .first-li:before {
+  margin-left: 18px;
+  position: absolute;
+  bottom: 1px;
+  border-bottom: 3px solid #42a0ff;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  content: "";
+}
+
+body .app .body-content .school-bag .pro-left .top-list li {
+  display: inline-block;
+  margin-right: 28px;
+  font-size: 14px;
+  color: #1E1E1E;
+}
+
+body .app .body-content .school-bag .pro-left .top-list li:hover {
+  color: #42bdeb;
+  cursor: pointer;
+}
+
+body .app .body-content .school-bag .pro-left .detail {
+  float: right;
+}
+
+body .app .body-content .school-bag .pro-left .detail span {
+  display: inline-block;
+  width: 57px;
+  height: 19px;
+  margin-top: 10px;
+  border: 1px solid #dbdbdb;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 0.4em;
+  color: #999999;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+body .app .body-content .school-bag .pro-left .detail a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #42bdeb;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+body .app .body-content .school-bag .pro-left .list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+body .app .body-content .school-bag .pro-left .list li {
+  display: inline-block;
+  margin-right: 16.2px;
+  width: 160px;
+  height: 162px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+body .app .body-content .school-bag .pro-left .list li:hover .description {
+  height: auto;
+  color: #42bdeb;
+  text-overflow: initial;
+  white-space: normal;
+}
+
+body .app .body-content .school-bag .pro-left .list li:hover .img-content:before {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-out , height 0.2s ease-out 0.2s;
+  border-bottom-color: #42bdeb;
+  border-left-color: #42bdeb;
+}
+
+body .app .body-content .school-bag .pro-left .list li:hover .img-content:after {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-out , height 0.2s ease-out 0.2s;
+  border-top-color: #42bdeb;
+  border-right-color: #42bdeb;
+}
+
+body .app .body-content .school-bag .pro-left .list li:hover .img-content .info {
+  transform: translateY(0);
+}
+
+body .app .body-content .school-bag .pro-left .list li a .img-content {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 0.4em;
+  margin-bottom: 10px;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .img-content:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .img-content:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
+  box-sizing: border-box;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .img-content img {
+  width: 100%;
+  min-height: 100px;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .img-content .info {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #42bdeb;
+  transition: all 0.2s ease 0.2s;
+  transform: translateY(30px);
+}
+
+body .app .body-content .school-bag .pro-left .list li a .img-content .info img {
+  width: 20px;
+  min-height: 20px;
+  margin: 0 5px;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .img-content .info span {
+  font-size: 12px;
+  color: white;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .description {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #1E1E1E;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .view-commit {
+  height: 17px;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .view-commit .view {
+  margin-right: 20px;
+  padding-right: 2px;
+  color: #42bdeb;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .view-commit .view img {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .view-commit .commit {
+  margin-right: 20px;
+  padding-right: 2px;
+  color: #6FC93A;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+body .app .body-content .school-bag .pro-left .list li a .view-commit .commit img {
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+body .app .body-content .school-bag .pro-right {
+  margin-top: 3px;
+  vertical-align: top;
+  display: inline-block;
+  width: 20%;
+}
+
+body .app .body-content .school-bag .pro-right h2 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+body .app .body-content .school-bag .pro-right h2 .span-first {
+  font-size: 16px;
+  color: #999999;
+  margin-left: 2px;
+}
+
+body .app .body-content .school-bag .pro-right h2 .right-top {
+  display: inline-block;
+  position: relative;
+  margin-left: 50px;
+  font-size: 14px;
+  color: #68ceff;
+  vertical-align: bottom;
+}
+
+body .app .body-content .school-bag .pro-right h2 .right-top .span-two {
+  border-bottom: 2px solid;
+  color: #42a0ff;
+}
+
+body .app .body-content .school-bag .pro-right h2 .right-top .span-two:before {
+  margin-left: 11px;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 3px solid #42a0ff;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  content: "";
+}
+
+body .app .body-content .school-bag .pro-right ul {
+  list-style: none;
+  margin-top: 32px;
+}
+
+body .app .body-content .school-bag .pro-right ul .sou {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body .app .body-content .school-bag .pro-right ul .sou a {
+  color: #1E1E1E;
+}
+
+body .app .body-content .school-bag .pro-right ul .sou a:hover {
+  color: #42a0ff;
+}
+
+body .app .body-content .school-bag .pro-right ul li {
+  margin-bottom: 10px;
+}
+
+body .app .body-content .school-bag .pro-right ul li:hover h6 {
+  color: #42a0ff;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-left {
+  display: inline-block;
+  width: 89px;
+  height: 62px;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-left img {
+  width: 100%;
+  height: 100%;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-right {
+  display: inline-block;
+  float: right;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-right h6 {
+  font-weight: normal;
+  font-size: 12px;
+  width: 138px;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-right .up {
+  font-size: 12px;
+  color: #DAD8D8;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-right .right-bottom .view {
+  font-size: 12px;
+  color: #42a0ff;
+  margin-right: 20px;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-right .right-bottom .view img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-right .right-bottom .commit {
+  font-size: 12px;
+  color: #6FC93A;
+}
+
+body .app .body-content .school-bag .pro-right ul li a .right-right .right-bottom .commit img {
+  margin-right: 3px;
+  vertical-align: -1px;
+}
+
+body .app .footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+  padding-top: 20px;
+}
+
+body .app .footer .center {
+  padding-bottom: 60px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+body .app .footer .center .footer-left {
+  padding-right: 60px;
+  border-right: 1px solid #e0e0e0;
+  display: inline-block;
+}
+
+body .app .footer .center .footer-left span {
+  margin-right: 42px;
+  font-size: 15px;
+  color: #999999;
+  vertical-align: top;
+}
+
+body .app .footer .center .footer-left .footer-list {
+  list-style: none;
+  display: inline-block;
+}
+
+body .app .footer .center .footer-left .footer-list li {
+  font-size: 18px;
+  margin-bottom: 42px;
+}
+
+body .app .footer .center .footer-left .footer-list li a {
+  color: #2e2e2e;
+}
+
+body .app .footer .center .footer-right {
+  display: inline-block;
+  margin-left: 55px;
+}
+
+body .app .footer .center .footer-right a {
+  margin-right: 25px;
+  line-height: 90px;
+  display: inline-block;
+  text-align: center;
+}
+
+body .app .footer .center .footer-right a .footer-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #6FC93A;
+}
+
+body .app .footer .center .footer-right a .footer-img i {
+  color: white;
+  vertical-align: middle;
+  font-size: 45px;
+}
+
+body .app .footer .center .footer-right a .footer-imgtwo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ff3737;
+}
+
+body .app .footer .center .footer-right a .footer-imgtwo i {
+  color: white;
+  vertical-align: middle;
+  font-size: 45px;
+}
+
+body .app .footer .center .footer-right a span {
+  font-size: 20px;
+  color: #2f2f2f;
+}
+
+body .app .footer .icp {
+  text-align: center;
+  font-size: 18px;
+  color: #929292;
+  padding-bottom: 30px;
+}
+
+body .app .back-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 56px;
+  width: 56px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+body .app .back-top:hover {
+  transform: translate(-5px, -10px);
+  box-shadow: 10px 10px 6px 0 #848484;
+}
